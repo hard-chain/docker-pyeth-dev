@@ -46,6 +46,7 @@ eth:
     }
   }
 jsonrpc:
+  listen_host: '0.0.0.0'
   listen_port: 8545
 discovery:
   listen_port: 30303
