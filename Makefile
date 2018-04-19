@@ -39,12 +39,12 @@ run-node:
 	docker logs -f ${validator_name}
 
 
-data_path := 99
+data_path := 11
 new-account2:
 	bash ./utils/new-account2.sh ./validator/data$(data_path) $(current_dir)
 
+	#docker build ./validator -t casper-validator
 run-node2:
-	docker build ./validator -t casper-validator
 	@echo "\n🌟👻 Starting node! 👻🌟\n"
 	docker run -it --name validator$(data_path) \
                 -v $(current_dir)/validator/data$(data_path)/config:/root/.config/pyethapp \
