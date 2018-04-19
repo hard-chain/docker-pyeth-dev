@@ -48,16 +48,18 @@ RUN cd pydevp2p && git pull
 RUN cd pyethereum/casper && git pull
 RUN cd pyethereum && git pull
 RUN cd pyethapp && git pull
-RUN cd vyper && python setup.py develop
-RUN cd pyethapp && python setup.py develop
+RUN cd vyper && git checkout v0.0.4
 RUN cd pyethereum && python setup.py develop
+RUN cd pyethereum/casper && python setup.py develop
+RUN cd pyethapp && python setup.py develop
 RUN cd tinyrpc && python setup.py develop
 RUN cd pydevp2p && python setup.py develop
+RUN cd vyper && python setup.py develop
 RUN rm -rf /usr/local/lib/python3.6/dist-packages/devp2p-*
 RUN rm -rf /usr/local/lib/python3.6/dist-packages/ethereum-*
 RUN rm -rf /usr/local/lib/python3.6/dist-packages/pyethapp-*
 RUN rm -rf /usr/local/lib/python3.6/dist-packages/tinyrpc-*
-RUN rm -rf /usr/local/lib/python3.6/dist-packages/viper-*
+RUN rm -rf /usr/local/lib/python3.6/dist-packages/vyper-*
 
 EXPOSE 30303
 EXPOSE 30303/udp
