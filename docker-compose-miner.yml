@@ -1,0 +1,37 @@
+version: "3"
+services:
+  miner-1:
+    container_name: miner-1
+    build: "./miner"
+    image: uhub.service.ucloud.cn/hard_docker/pyethapp-miner:0.4
+    #image: localethereum/pyethapp-miner
+    environment:
+      - BOOTSTRAP_NODE=enode://d3260a710a752b926bb3328ebe29bfb568e4fb3b4c7ff59450738661113fb21f5efbdf42904c706a9f152275890840345a5bc990745919eeb2dfc2c481d778ee@10.19.126.200:30303
+      - MINE_PERCENT=50
+      - SLEEPTIME=1
+    restart: always
+    networks:
+      back:
+          ipv4_address: 172.18.250.10
+  miner-2:
+    container_name: miner-2
+    build: "./miner"
+    image: uhub.service.ucloud.cn/hard_docker/pyethapp-miner:0.4
+    #image: localethereum/pyethapp-miner
+    environment:
+      - BOOTSTRAP_NODE=enode://d3260a710a752b926bb3328ebe29bfb568e4fb3b4c7ff59450738661113fb21f5efbdf42904c706a9f152275890840345a5bc990745919eeb2dfc2c481d778ee@10.19.126.200:30303
+      - MINE_PERCENT=50
+      - SLEEPTIME=1
+    restart: always
+    networks:
+      back:
+          ipv4_address: 172.18.250.11
+networks:
+  back:
+    driver: bridge
+    driver_opts:
+      com.docker.network.enable_ipv6: "false"
+    ipam:
+      driver: default
+      config:
+      - subnet: 172.18.250.0/24
