@@ -1,0 +1,164 @@
+version: "3"
+services:
+  validator-1:
+    container_name: validator-1
+    build: "./miner"
+    image: uhub.service.ucloud.cn/hard_docker/pyethapp-miner:0.5
+    #image: localethereum/pyethapp-miner
+    volumes:
+     - /root/docker-pyeth-dev/miner/start-validator.sh:/root/start.sh
+     - /root/pyethereum:/ethereum/pyethereum
+     - /root/pyethapp:/ethereum/pyethapp
+    environment:
+      - BOOTSTRAP_NODE=enode://d3260a710a752b926bb3328ebe29bfb568e4fb3b4c7ff59450738661113fb21f5efbdf42904c706a9f152275890840345a5bc990745919eeb2dfc2c481d778ee@10.19.126.200:30303
+      - MINE_PERCENT=50
+      - SLEEPTIME=1
+    restart: always
+    networks:
+      back:
+          ipv4_address: 172.18.250.20
+  validator-2:
+    container_name: validator-2
+    build: "./miner"
+    image: uhub.service.ucloud.cn/hard_docker/pyethapp-miner:0.5
+    #image: localethereum/pyethapp-miner
+    volumes:
+     - /root/docker-pyeth-dev/miner/start-validator.sh:/root/start.sh
+     - /root/pyethereum:/ethereum/pyethereum
+     - /root/pyethapp:/ethereum/pyethapp
+    environment:
+      - BOOTSTRAP_NODE=enode://d3260a710a752b926bb3328ebe29bfb568e4fb3b4c7ff59450738661113fb21f5efbdf42904c706a9f152275890840345a5bc990745919eeb2dfc2c481d778ee@10.19.126.200:30303
+      - MINE_PERCENT=50
+      - SLEEPTIME=1
+    restart: always
+    networks:
+      back:
+          ipv4_address: 172.18.250.21
+  validator-3:
+    container_name: validator-3
+    build: "./miner"
+    image: uhub.service.ucloud.cn/hard_docker/pyethapp-miner:0.5
+    #image: localethereum/pyethapp-miner
+    volumes:
+     - /root/docker-pyeth-dev/miner/start-validator.sh:/root/start.sh
+     - /root/pyethereum:/ethereum/pyethereum
+     - /root/pyethapp:/ethereum/pyethapp
+    environment:
+      - BOOTSTRAP_NODE=enode://d3260a710a752b926bb3328ebe29bfb568e4fb3b4c7ff59450738661113fb21f5efbdf42904c706a9f152275890840345a5bc990745919eeb2dfc2c481d778ee@10.19.126.200:30303
+      - MINE_PERCENT=50
+      - SLEEPTIME=1
+    restart: always
+    networks:
+      back:
+          ipv4_address: 172.18.250.22
+  validator-4:
+    container_name: validator-4
+    build: "./miner"
+    image: uhub.service.ucloud.cn/hard_docker/pyethapp-miner:0.5
+    #image: localethereum/pyethapp-miner
+    volumes:
+     - /root/docker-pyeth-dev/miner/start-validator.sh:/root/start.sh
+     - /root/pyethereum:/ethereum/pyethereum
+     - /root/pyethapp:/ethereum/pyethapp
+    environment:
+      - BOOTSTRAP_NODE=enode://d3260a710a752b926bb3328ebe29bfb568e4fb3b4c7ff59450738661113fb21f5efbdf42904c706a9f152275890840345a5bc990745919eeb2dfc2c481d778ee@10.19.126.200:30303
+      - MINE_PERCENT=50
+      - SLEEPTIME=1
+    restart: always
+    networks:
+      back:
+          ipv4_address: 172.18.250.23
+  validator-5:
+    container_name: validator-5
+    build: "./miner"
+    image: uhub.service.ucloud.cn/hard_docker/pyethapp-miner:0.5
+    #image: localethereum/pyethapp-miner
+    volumes:
+     - /root/docker-pyeth-dev/miner/start-validator.sh:/root/start.sh
+     - /root/pyethereum:/ethereum/pyethereum
+     - /root/pyethapp:/ethereum/pyethapp
+    environment:
+      - BOOTSTRAP_NODE=enode://d3260a710a752b926bb3328ebe29bfb568e4fb3b4c7ff59450738661113fb21f5efbdf42904c706a9f152275890840345a5bc990745919eeb2dfc2c481d778ee@10.19.126.200:30303
+      - MINE_PERCENT=50
+      - SLEEPTIME=1
+    restart: always
+    networks:
+      back:
+          ipv4_address: 172.18.250.24
+  validator-6:
+    container_name: validator-6
+    build: "./miner"
+    image: uhub.service.ucloud.cn/hard_docker/pyethapp-miner:0.5
+    #image: localethereum/pyethapp-miner
+    volumes:
+     - /root/docker-pyeth-dev/miner/start-validator.sh:/root/start.sh
+     - /root/pyethereum:/ethereum/pyethereum
+     - /root/pyethapp:/ethereum/pyethapp
+    environment:
+      - BOOTSTRAP_NODE=enode://d3260a710a752b926bb3328ebe29bfb568e4fb3b4c7ff59450738661113fb21f5efbdf42904c706a9f152275890840345a5bc990745919eeb2dfc2c481d778ee@10.19.126.200:30303
+      - MINE_PERCENT=50
+      - SLEEPTIME=1
+    restart: always
+    networks:
+      back:
+          ipv4_address: 172.18.250.25
+  validator-7:
+    container_name: validator-7
+    build: "./miner"
+    image: uhub.service.ucloud.cn/hard_docker/pyethapp-miner:0.5
+    #image: localethereum/pyethapp-miner
+    volumes:
+     - /root/docker-pyeth-dev/miner/start-validator.sh:/root/start.sh
+     - /root/pyethereum:/ethereum/pyethereum
+     - /root/pyethapp:/ethereum/pyethapp
+    environment:
+      - BOOTSTRAP_NODE=enode://d3260a710a752b926bb3328ebe29bfb568e4fb3b4c7ff59450738661113fb21f5efbdf42904c706a9f152275890840345a5bc990745919eeb2dfc2c481d778ee@10.19.126.200:30303
+      - MINE_PERCENT=50
+      - SLEEPTIME=1
+    restart: always
+    networks:
+      back:
+          ipv4_address: 172.18.250.26
+  validator-8:
+    container_name: validator-8
+    build: "./miner"
+    image: uhub.service.ucloud.cn/hard_docker/pyethapp-miner:0.5
+    #image: localethereum/pyethapp-miner
+    volumes:
+     - /root/docker-pyeth-dev/miner/start-validator.sh:/root/start.sh
+     - /root/pyethereum:/ethereum/pyethereum
+     - /root/pyethapp:/ethereum/pyethapp
+    environment:
+      - BOOTSTRAP_NODE=enode://d3260a710a752b926bb3328ebe29bfb568e4fb3b4c7ff59450738661113fb21f5efbdf42904c706a9f152275890840345a5bc990745919eeb2dfc2c481d778ee@10.19.126.200:30303
+      - MINE_PERCENT=50
+      - SLEEPTIME=1
+    restart: always
+    networks:
+      back:
+          ipv4_address: 172.18.250.27
+  validator-9:
+    container_name: validator-9
+    build: "./miner"
+    image: uhub.service.ucloud.cn/hard_docker/pyethapp-miner:0.5
+    #image: localethereum/pyethapp-miner
+    volumes:
+     - /root/docker-pyeth-dev/miner/start-validator.sh:/root/start.sh
+     - /root/pyethereum:/ethereum/pyethereum
+     - /root/pyethapp:/ethereum/pyethapp
+    environment:
+      - BOOTSTRAP_NODE=enode://d3260a710a752b926bb3328ebe29bfb568e4fb3b4c7ff59450738661113fb21f5efbdf42904c706a9f152275890840345a5bc990745919eeb2dfc2c481d778ee@10.19.126.200:30303
+      - MINE_PERCENT=50
+      - SLEEPTIME=1
+    restart: always
+    networks:
+      back:
+          ipv4_address: 172.18.250.28
+networks:
+  back:
+    driver: bridge
+    driver_opts:
+      com.docker.network.enable_ipv6: "false"
+    ipam:
+      driver: default
+      config:
+      - subnet: 172.18.250.0/24

@@ -1,0 +1,25 @@
+version: "3"
+services:
+  bootstrap:
+    container_name: bootstrap
+    build: "./bootstrap"
+    image: localethereum/pyethapp-bootstrap
+    volumes:
+     - /root/docker-pyeth-dev/bootstrap/start-boot.sh:/root/start.sh
+     - /root/pyethereum:/ethereum/pyethereum
+     - /root/pyethapp:/ethereum/pyethapp
+    restart: always
+    ports:
+     - "30303:30303"
+    networks:
+      back:
+          ipv4_address: 172.18.250.2
+networks:
+  back:
+    driver: bridge
+    driver_opts:
+      com.docker.network.enable_ipv6: "false"
+    ipam:
+      driver: default
+      config:
+      - subnet: 172.18.250.0/24
