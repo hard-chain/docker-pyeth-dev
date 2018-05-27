@@ -10,4 +10,4 @@ echo "Creating new account"
 /usr/local/bin/pyethapp --password /root/.config/pyethapp/password.txt account new
 sleep $SLEEPTIME
 echo "Launching node with mine amt: $MINE_PERCENT"
-/usr/local/bin/pyethapp --unlock 1 --validate 1 --deposit 2000  -l eth.chain:info,eth.chainservice:debug,eth.validator:info,eth.block:debug --log-file /root/log/log.txt  --password /root/.config/pyethapp/password.txt -b $BOOTSTRAP_NODE run
+/usr/local/bin/pyethapp --unlock 1 --validate 1 --deposit 2000  -l eth.chain:info,eth.chainservice:debug,eth.validator:info,eth.block:debug,p2p.upnp:debug --log-file /root/log/log.txt  --password /root/.config/pyethapp/password.txt -b $BOOTSTRAP_NODE run
