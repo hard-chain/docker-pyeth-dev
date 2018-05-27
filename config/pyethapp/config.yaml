@@ -1,8 +1,8 @@
 accounts:
   privkeys_hex: [482580fe05668c54ed16708d17481cf6546be6faca24d4b80919a6ef5ed95c92]
-node: {privkey_hex: 5694011885e60b4325c2bee2d710b667212af273090e25d848886e333b909e95}
+node: {privkey_hex: 13986ef3ec36dae6d83338e02d89f0928b3bd8e31e2351f5544e734041e672ba}
 eth:
-  network_id: 8888
+  network_id: 9888
   genesis: {
     "nonce": "0x0000000000000056",
     "difficulty": "0x2000",
@@ -17,7 +17,7 @@ eth:
         "balance": "5001001002003004005006"
       },
       "073f20292c73dc8f3b144ef28519d179464c5bf8": {
-        "balance": "100005001001002003004005006"
+        "balance": "5001001002003004005006"
       },
       "7608213c8468dc111298a0ebd19191a5616861c8": {
         "balance": "5001001002003004005006"
