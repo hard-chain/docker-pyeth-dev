@@ -9,8 +9,7 @@ services:
      - /root/pyethereum:/ethereum/pyethereum
      - /root/pyethapp:/ethereum/pyethapp
      - /root/pydevp2p:/ethereum/pydevp2p
-     - /root/docker-pyeth-dev/bootstrap/pyethapp:/root/.config/pyethapp
-     #- /root/docker-pyeth-dev/bootstrap/data/config:/root/.config/pyethapp
+     - /root/docker-pyeth-dev/bootstrap/data/config:/root/.config/pyethapp
     restart: always
     ports:
      - "30303:30303/tcp"
