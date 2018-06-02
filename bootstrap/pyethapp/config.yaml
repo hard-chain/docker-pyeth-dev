@@ -1,0 +1,59 @@
+accounts:
+  privkeys_hex: [482580fe05668c54ed16708d17481cf6546be6faca24d4b80919a6ef5ed95c92]
+node: {privkey_hex: 8a7c05229e8696c70ed83ffed9aefe02aeb93352b68584f130944303590fa63b}
+eth:
+  network_id: 8888
+  genesis: {
+    "nonce": "0x0000000000000056",
+    "difficulty": "0x2000",
+    "mixhash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "coinbase": "0x0000000000000000000000000000000000000000",
+    "timestamp": "0x00",
+    "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "extraData": "0x11bbe8db4e347b4e8c937c1c8370e4b5ed33adb3db69cbdb7a38e1e50b1b82fa",
+    "gasLimit": "0x5f5e100",
+    "alloc": {
+      "9f1ea1d6e584861ab3ca3bfa5dd678dafa95d965": {
+        "balance": "5001001002003004005006"
+      },
+      "073f20292c73dc8f3b144ef28519d179464c5bf8": {
+        "balance": "100005001001002003004005006"
+      },
+      "7608213c8468dc111298a0ebd19191a5616861c8": {
+        "balance": "5001001002003004005006"
+      },
+      "b18a1c6efdcc03fece828250ce0608b1057a89d3": {
+        "balance": "5001001002003004005006"
+      },
+      "494c89fc4608d5529c31d3c33bbdb4e5d0e960fd": {
+        "balance": "5001001002003004005006"
+      },
+      "937f809bdfbd4e0aaaad0b3fc69a5f24516e5668": {
+        "balance": "5001001002003004005006"
+      },
+      "f12e5b669d537db90f90b3b951b975f93d8c8d4a": {
+        "balance": "5001001002003004005006"
+      },
+      "0aaac5b6e8410a2fc70416bb6de7589bd74ae75a": {
+        "balance": "5001001002003004005006"
+      },
+      "6a5ea30a451f8a42cb2d2508f46e61aa4aa8c5f9": {
+        "balance": "5001001002003004005006"
+      },
+      "742ca5bf31369b0c0aeabbb6401ca760e568e53e": {
+        "balance": "5001001002003004005006"
+      }
+    }
+  }
+jsonrpc:
+  listen_host: '0.0.0.0'
+  listen_port: 8545
+discovery:
+  listen_port: 30303
+  bootstrap_nodes: [
+    "enode://d3260a710a752b926bb3328ebe29bfb568e4fb3b4c7ff59450738661113fb21f5efbdf42904c706a9f152275890840345a5bc990745919eeb2dfc2c481d778ee@0.0.0.0:30303"
+  ]
+p2p:
+  listen_port: 30303
+  min_peers: 5
+  max_peers: 100
