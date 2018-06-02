@@ -2,7 +2,7 @@ accounts:
   privkeys_hex: [482580fe05668c54ed16708d17481cf6546be6faca24d4b80919a6ef5ed95c92]
 node: {privkey_hex: PRIVKEY}
 eth:
-  network_id: 8888
+  network_id: 8881
   genesis: {
     "nonce": "0x0000000000000056",
     "difficulty": "0x2000",
