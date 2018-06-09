@@ -1,6 +1,6 @@
 accounts:
   privkeys_hex: [482580fe05668c54ed16708d17481cf6546be6faca24d4b80919a6ef5ed95c92]
-node: {privkey_hex: PRIVKEY}
+node: {privkey_hex: 26fa65c9441a49d8325925ee70bdfe75e0be7ed0c1bc76668c1dc150eece865b}
 eth:
   network_id: 8881
   genesis: {
