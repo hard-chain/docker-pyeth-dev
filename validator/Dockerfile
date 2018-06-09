@@ -62,7 +62,6 @@ COPY filebeat.yml /etc/filebeat/filebeat.yml
 RUN chmod go-w /etc/filebeat/filebeat.yml
 COPY default_data/log /root/log
 COPY start.sh /root/
-COPY other/ /root/.config/pyethapp/keystore/
 
 EXPOSE 30303
 EXPOSE 30303/udp
