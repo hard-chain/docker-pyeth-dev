@@ -6,8 +6,9 @@ services:
     image: uhub.service.ucloud.cn/hard_docker/pyethapp-miner:0.5
     #image: localethereum/pyethapp-miner
     ports:
-     - "30303:30303/tcp"
-     - "30303:30303/udp"
+     - "40303:40303/tcp"
+     - "40303:40303/udp"
+     - "8545:8545/tcp"
     volumes:
      - /root/docker-pyeth-dev/miner/start-validator.sh:/root/start.sh
      - /root/pyethereum:/ethereum/pyethereum
@@ -16,7 +17,7 @@ services:
      - /opt/pyethapp:/root/.config/pyethapp
      - /root/docker-pyeth-dev/miner/default_data/config:/root/.config/pyethapp
     environment:
-      - BOOTSTRAP_NODE=enode://d3260a710a752b926bb3328ebe29bfb568e4fb3b4c7ff59450738661113fb21f5efbdf42904c706a9f152275890840345a5bc990745919eeb2dfc2c481d778ee@192.168.0.120:30303
+      - BOOTSTRAP_NODE=enode://d3260a710a752b926bb3328ebe29bfb568e4fb3b4c7ff59450738661113fb21f5efbdf42904c706a9f152275890840345a5bc990745919eeb2dfc2c481d778ee@192.168.0.120:40303
       - MINE_PERCENT=50
       - SLEEPTIME=1
     restart: always

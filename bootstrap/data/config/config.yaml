@@ -47,13 +47,13 @@ eth:
   }
 jsonrpc:
   listen_host: '0.0.0.0'
-  listen_port: 8545
+  listen_port: 18545
 discovery:
-  listen_port: 30303
+  listen_port: 40303
   bootstrap_nodes: [
-    "enode://d3260a710a752b926bb3328ebe29bfb568e4fb3b4c7ff59450738661113fb21f5efbdf42904c706a9f152275890840345a5bc990745919eeb2dfc2c481d778ee@0.0.0.0:30303"
+    "enode://d3260a710a752b926bb3328ebe29bfb568e4fb3b4c7ff59450738661113fb21f5efbdf42904c706a9f152275890840345a5bc990745919eeb2dfc2c481d778ee@0.0.0.0:40303"
   ]
 p2p:
-  listen_port: 30303
+  listen_port: 40303
   min_peers: 5
   max_peers: 100

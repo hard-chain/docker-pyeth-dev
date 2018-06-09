@@ -12,7 +12,7 @@ services:
      - /root/pydevp2p:/ethereum/pydevp2p
      - /root/docker-pyeth-dev/miner/default_data/config:/root/.config/pyethapp
     environment:
-      - BOOTSTRAP_NODE=enode://d3260a710a752b926bb3328ebe29bfb568e4fb3b4c7ff59450738661113fb21f5efbdf42904c706a9f152275890840345a5bc990745919eeb2dfc2c481d778ee@192.168.0.120:30303
+      - BOOTSTRAP_NODE=enode://d3260a710a752b926bb3328ebe29bfb568e4fb3b4c7ff59450738661113fb21f5efbdf42904c706a9f152275890840345a5bc990745919eeb2dfc2c481d778ee@192.168.0.120:40303
       - MINE_PERCENT=50
       - SLEEPTIME=1
     restart: always

@@ -12,9 +12,9 @@ services:
      - /root/docker-pyeth-dev/bootstrap/data/config:/root/.config/pyethapp
     restart: always
     ports:
-     - "30303:30303/tcp"
-     - "30303:30303/udp"
-     - "8545:8545"
+     - "40303:40303/tcp"
+     - "40303:40303/udp"
+     - "18545:18545"
     networks:
       back:
           ipv4_address: 172.18.250.2
