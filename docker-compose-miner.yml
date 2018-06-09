@@ -16,6 +16,10 @@ services:
       - MINE_PERCENT=50
       - SLEEPTIME=1
     restart: always
+    ports:
+     - "40303:40303/tcp"
+     - "40303:40303/udp"
+     - "18545:18545"
     networks:
       back:
           ipv4_address: 172.18.250.10
