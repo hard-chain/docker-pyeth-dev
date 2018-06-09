@@ -6,7 +6,7 @@ services:
     image: uhub.service.ucloud.cn/hard_docker/pyethapp-miner:0.5
     #image: localethereum/pyethapp-miner
     volumes:
-     - /root/docker-pyeth-dev/miner/start-miner.sh:/root/start.sh
+     - /root/docker-pyeth-dev/miner/start.sh:/root/start.sh
      - /root/pyethereum:/ethereum/pyethereum
      - /root/pyethapp:/ethereum/pyethapp
      - /root/pydevp2p:/ethereum/pydevp2p
