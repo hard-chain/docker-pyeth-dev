@@ -1,6 +1,6 @@
 accounts:
   privkeys_hex: [482580fe05668c54ed16708d17481cf6546be6faca24d4b80919a6ef5ed95c92]
-node: {privkey_hex: 26fa65c9441a49d8325925ee70bdfe75e0be7ed0c1bc76668c1dc150eece865b}
+node: {privkey_hex: PRIVKEY}
 eth:
   network_id: 8881
   genesis: {
@@ -14,40 +14,40 @@ eth:
     "gasLimit": "0x5f5e100",
     "alloc": {
       "9f1ea1d6e584861ab3ca3bfa5dd678dafa95d965": {
-        "balance": "5001001002003004005006"
+        "balance": "1000000005001001002003004005006"
       },
       "073f20292c73dc8f3b144ef28519d179464c5bf8": {
-        "balance": "100005001001002003004005006"
+        "balance": "1000000005001001002003004005006"
       },
       "7608213c8468dc111298a0ebd19191a5616861c8": {
-        "balance": "5001001002003004005006"
+        "balance": "1000000005001001002003004005006"
       },
       "b18a1c6efdcc03fece828250ce0608b1057a89d3": {
-        "balance": "5001001002003004005006"
+        "balance": "1000000005001001002003004005006"
       },
       "494c89fc4608d5529c31d3c33bbdb4e5d0e960fd": {
-        "balance": "5001001002003004005006"
+        "balance": "1000000005001001002003004005006"
       },
       "937f809bdfbd4e0aaaad0b3fc69a5f24516e5668": {
-        "balance": "5001001002003004005006"
+        "balance": "1000000005001001002003004005006"
       },
       "f12e5b669d537db90f90b3b951b975f93d8c8d4a": {
-        "balance": "5001001002003004005006"
+        "balance": "1000000005001001002003004005006"
       },
       "0aaac5b6e8410a2fc70416bb6de7589bd74ae75a": {
-        "balance": "5001001002003004005006"
+        "balance": "1000000005001001002003004005006"
       },
       "6a5ea30a451f8a42cb2d2508f46e61aa4aa8c5f9": {
-        "balance": "5001001002003004005006"
+        "balance": "1000000005001001002003004005006"
       },
       "742ca5bf31369b0c0aeabbb6401ca760e568e53e": {
-        "balance": "5001001002003004005006"
+        "balance": "1000000005001001002003004005006"
       }
     }
   }
 jsonrpc:
   listen_host: "0.0.0.0"
-  listen_port: 8545
+  listen_port: 18545
 discovery:
   listen_port: 40303
   bootstrap_nodes: [
